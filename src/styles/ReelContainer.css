@@ -1,0 +1,30 @@
+.reels-app {
+  position: relative;
+  width: 100%;
+  max-width: 448px;
+  margin: 0 auto;
+  background-color: black;
+  overflow: hidden;
+}
+.reels-container {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+
+.reels-container::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .reels-app {
+    max-width: 100%;
+  }
+
+  .reel-caption {
+    padding: 12px;
+  }
+}
