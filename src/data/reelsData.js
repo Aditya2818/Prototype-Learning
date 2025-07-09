@@ -1,27 +1,27 @@
 export const reelsData  = [
     {
       id: 1,
-      caption: "Just vibing to my favorite song! 💃✨ #dance #trending",
-      video: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+      caption: "Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae",
+      video: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
     },
     {
       id: 2,
-      caption: "30-second pasta hack that will change your life! 🍝👨‍🍳",
+      caption: "pellentesque sem placerat. In id cursus mi pretium tellus duis convallis",
       video: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4"
     },
     {
       id: 3,
-      caption: "Morning workout routine ✨ Who's joining me? 💪 #fitness #motivation",
+      caption: "pellentesque sem placerat. In id cursus mi pretium tellus duis convallis",
       video: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
     },
     {
       id: 4,
-      caption: "Hidden gems in Bali you need to visit! 🏝️✈️ #travel #bali",
+      caption: "pellentesque sem placerat. In id cursus mi pretium tellus duis convallis",
       video: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
     },
     {
       id: 5,
-      caption: "Painting magic in 60 seconds ✨🎨 #art #painting #satisfying",
+      caption: "pellentesque sem placerat. In id cursus mi pretium tellus duis convallis",
       video: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4"
     }
   ];

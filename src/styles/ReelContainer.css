@@ -1,7 +1,6 @@
 .reels-app {
   position: relative;
   width: 100%;
-  max-width: 448px;
   margin: 0 auto;
   background-color: black;
   overflow: hidden;
@@ -18,7 +17,7 @@
   display: none; /* Chrome, Safari, Opera */
 }
 
-/* Responsive design */
+
 @media (max-width: 768px) {
   .reels-app {
     max-width: 100%;

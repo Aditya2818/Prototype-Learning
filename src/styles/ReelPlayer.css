@@ -80,8 +80,8 @@
 
  .mute-button {
   position: absolute;
-  bottom: 40px;
-  right: 15px;
+  bottom: 18px;
+  right: 14px;
   background: rgba(0, 0, 0, 0.5);
   border: none;
   border-radius: 50%;
@@ -98,3 +98,9 @@
 .mute-button:hover {
   background: rgba(0, 0, 0, 0.7);
 }
+
+  @media (max-width: 768px) {
+     .mute-button {
+      bottom: 18%;
+     }
+  }
