@@ -3,6 +3,7 @@ import "../styles/ReelContainer.css";
 import { reelsData } from "../data/reelsData";
 import ReelPlayer from "./ReelPlayer.jsx";
 import ReelOverlay from "./ReelOverlay";
+import ReadingCard from "./ReadingCard.jsx";
 
 const ReelContainer = () => {
   const [currentReel, setCurrentReel] = useState(0);
@@ -102,16 +103,25 @@ const ReelContainer = () => {
               position: "relative",
             }}
           >
-            <ReelPlayer
-              reel={reel}
-              isActive={index === currentReel}
-              isPlaying={isPlaying && index === currentReel}
-              onTogglePlayPause={togglePlayPause}
-              ref={(el) => (videoRefs.current[index] = el)}
-              isMuted={isMuted}
-              onToggleMute={toggleMute}
-            />
-            <ReelOverlay reel={reel} />
+            {reel.flag === "video" ? (
+              <>
+                <ReelPlayer
+                  reel={reel}
+                  isActive={index === currentReel}
+                  isPlaying={isPlaying && index === currentReel}
+                  onTogglePlayPause={togglePlayPause}
+                  ref={(el) => (videoRefs.current[index] = el)}
+                  isMuted={isMuted}
+                  onToggleMute={toggleMute}
+                />
+                <ReelOverlay reel={reel} />
+              </>
+            ) : (
+              <ReadingCard
+                title="Welcome to Reading Mode"
+                content={reel.caption}
+              />
+            )}
           </div>
         ))}
       </div>
