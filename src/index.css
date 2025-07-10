@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Livvic:wght@300;400;500;600;700&display=swap");
 :root {
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -8,9 +9,8 @@ html, body, #root {
   margin: 0;
   padding: 0;
   height: 100%;
-  background-color: black;
+  background: none;
 }
-.swiper-slide {
-  height: 100vh;
-  background-color: black;
+body{
+  font-family: "Livvic";
 }
