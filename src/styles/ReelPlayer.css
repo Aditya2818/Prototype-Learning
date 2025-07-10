@@ -5,6 +5,7 @@
     background-color: #1f2937;
     scroll-snap-align: start; 
     flex-shrink: 0; 
+    overflow: hidden;
   }
 
   .reel-video {
@@ -15,6 +16,7 @@
     height: 100%;
     object-fit: cover; /* Cover entire area while maintaining aspect ratio */
     cursor: pointer;
+    overflow: hidden;
   }
 
   .video-overlay {

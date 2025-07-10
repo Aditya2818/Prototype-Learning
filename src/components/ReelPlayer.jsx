@@ -46,6 +46,7 @@ const ReelPlayer = forwardRef(({
           <button 
             onClick={onToggleMute}
             className="mute-button"
+            style={{cursor:"pointer"}}
           >
             {isMuted ? <VolumeX size={24} /> : <Volume2 size={24} />}
           </button>

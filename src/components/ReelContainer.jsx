@@ -4,6 +4,7 @@ import { reelsData } from "../data/reelsData";
 import ReelPlayer from "./ReelPlayer.jsx";
 import ReelOverlay from "./ReelOverlay";
 import ReadingCard from "./ReadingCard.jsx";
+import MCQCard from "./MCQCard.jsx";
 
 const ReelContainer = () => {
   const [currentReel, setCurrentReel] = useState(0);
@@ -94,36 +95,60 @@ const ReelContainer = () => {
           scrollSnapType: "y mandatory",
         }}
       >
-        {reelsData.map((reel, index) => (
-          <div
-            key={reel.id}
-            style={{
-              height: "100vh",
-              scrollSnapAlign: "start",
-              position: "relative",
-            }}
-          >
-            {reel.flag === "video" ? (
-              <>
-                <ReelPlayer
-                  reel={reel}
-                  isActive={index === currentReel}
-                  isPlaying={isPlaying && index === currentReel}
-                  onTogglePlayPause={togglePlayPause}
-                  ref={(el) => (videoRefs.current[index] = el)}
-                  isMuted={isMuted}
-                  onToggleMute={toggleMute}
+        {reelsData.map((reel, index) => {
+          let content = null;
+
+          switch (reel.flag) {
+            case "video":
+              content = (
+                <>
+                  <ReelPlayer
+                    reel={reel}
+                    isActive={index === currentReel}
+                    isPlaying={isPlaying && index === currentReel}
+                    onTogglePlayPause={togglePlayPause}
+                    ref={(el) => (videoRefs.current[index] = el)}
+                    isMuted={isMuted}
+                    onToggleMute={toggleMute}
+                  />
+                  <ReelOverlay reel={reel} />
+                </>
+              );
+              break;
+
+            case "text":
+              content = (
+                <ReadingCard title={reel.title} content={reel.caption} />
+              );
+              break;
+
+            case "questions":
+              content = (
+                <MCQCard
+                  text={reel.text}
+                  options={reel.options}
+                  correctIndex={reel.correctIndex}
                 />
-                <ReelOverlay reel={reel} />
-              </>
-            ) : (
-              <ReadingCard
-                title="Welcome to Reading Mode"
-                content={reel.caption}
-              />
-            )}
-          </div>
-        ))}
+              );
+              break;
+
+            default:
+              content = null;
+          }
+
+          return (
+            <div
+              key={reel.id}
+              style={{
+                height: "100vh",
+                scrollSnapAlign: "start",
+                position: "relative",
+              }}
+            >
+              {content}
+            </div>
+          );
+        })}
       </div>
     </div>
   );
