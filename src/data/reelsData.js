@@ -216,6 +216,10 @@ export const reelsData = [
       "Electromagnetic induction"
     ],
     flag: "drag"
+  },
+  {
+    id:26,
+    flag:"draw"
   }
   ];
 

@@ -9,6 +9,7 @@ import QACard from "./QACard.jsx";
 import CardFlip from "./CardFlip.jsx";
 import ImageCard from "./ImageCard.jsx";
 import DragText from "./DragText.jsx";
+import Draw from "./Draw.jsx";
 
 const ReelContainer = () => {
   const [currentReel, setCurrentReel] = useState(0);
@@ -146,6 +147,9 @@ const ReelContainer = () => {
               break;
             case "drag":
               content = <DragText options={reel.options}/>
+              break;
+            case "draw":
+              content = <Draw/>
               break;
 
             default:
