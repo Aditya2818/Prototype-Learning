@@ -65,7 +65,7 @@ export const reelsData = [
   {
     id: 7,
     title: "Atomic Existence",
-    images: ["https://sdmntprwestcentralus.oaiusercontent.com/files/00000000-b8b4-61fb-97d4-bf7f4e0d0989/raw?se=2025-07-13T17%3A10%3A52Z&sp=r&sv=2024-08-04&sr=b&scid=fac84bc0-c3bd-5a46-849e-1d71fc9e9eff&skoid=a3412ad4-1a13-47ce-91a5-c07730964f35&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-07-13T10%3A13%3A19Z&ske=2025-07-14T10%3A13%3A19Z&sks=b&skv=2024-08-04&sig=atTjuRQwSUGgdoQpzKchGlAOptklcu5pOnIo0zIs0Ws%3D","https://sdmntprwestus2.oaiusercontent.com/files/00000000-3290-61f8-afd1-fd7862ed7027/raw?se=2025-07-13T17%3A39%3A51Z&sp=r&sv=2024-08-04&sr=b&scid=70e6c7b2-8f40-5a18-93d6-5b453fdcee34&skoid=a3412ad4-1a13-47ce-91a5-c07730964f35&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-07-12T23%3A12%3A24Z&ske=2025-07-13T23%3A12%3A24Z&sks=b&skv=2024-08-04&sig=UZcvqrfedzosPCrwXdVaMNyeCrW5VzgB//dPNmt7088%3D"],
+    images: ["https://res.cloudinary.com/dft6bqu4v/image/upload/v1752429980/img1_w9upld.png","https://res.cloudinary.com/dft6bqu4v/image/upload/v1752429979/img2_ccigqh.png"],
     flag: "image"
   },
 
