@@ -1,0 +1,25 @@
+.question-input{
+    
+    padding: 8px;
+}
+.question-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 24px;
+}
+.submit-btn{
+    font-size: 16px;
+    padding: 8px;
+}
+.submit-btn.correct{
+     background-color: #1a3d1a;
+  border-color: #4caf50;
+  color: #a0f4a0;
+}
+
+.submit-btn.wrong{
+    background-color: #3a1a1a;
+  border-color: #f44336;
+  color: #f8a0a0;
+}

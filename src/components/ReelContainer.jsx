@@ -5,6 +5,8 @@ import ReelPlayer from "./ReelPlayer.jsx";
 import ReelOverlay from "./ReelOverlay";
 import ReadingCard from "./ReadingCard.jsx";
 import MCQCard from "./MCQCard.jsx";
+import QACard from "./QACard.jsx";
+import CardFlip from "./CardFlip.jsx";
 
 const ReelContainer = () => {
   const [currentReel, setCurrentReel] = useState(0);
@@ -130,6 +132,12 @@ const ReelContainer = () => {
                   correctIndex={reel.correctIndex}
                 />
               );
+              break;
+            case "QnA":
+              content = <QACard question={reel.text} solution={reel.answer} />;
+              break;
+            case "flipcard":
+              content = <CardFlip frontText={reel.frontText} backText={reel.backText}/>
               break;
 
             default:

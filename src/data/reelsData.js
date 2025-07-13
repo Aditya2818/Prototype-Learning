@@ -174,7 +174,42 @@ export const reelsData = [
     ],
     correctIndex: 2,
     flag: "questions"
-  }
-
+  },
+  {
+    id: 21,
+    text: "What force keeps planets in orbit around the Sun?",
+    answer:"Gravitational force",
+    flag: "QnA"
+  },
+  {
+    id: 22,
+    text: "Who first proposed the idea of atoms?",
+    answer:"Democritus",
+    flag: "QnA"
+  },
+   {
+    id: 23,
+    text: "Which subatomic particle has a negative charge?",
+    answer:"Electron",
+    flag: "QnA"
+  },
+  {
+    id: 24,
+    frontText: "Atom 💡",
+    backText:"An atom is the smallest unit of matter.",
+    flag: "flipcard"
+  },
+  {
+    id: 25,
+    frontText: "Quantum Theory 💡",
+    backText:"Quantum theory explains the behavior of matter and energy on atomic scales.",
+    flag: "flipcard"
+  },
+   {
+    id: 26,
+    frontText: "Photoelectric Effect 💡",
+    backText:"Emission of electrons from a metal surface when exposed to light.",
+    flag: "flipcard"
+  },
 ];
 
