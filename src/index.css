@@ -9,7 +9,7 @@ html, body, #root {
   margin: 0;
   padding: 0;
   height: 100%;
-  background: none;
+  background-color: #F1FAEE;
 }
 body{
   font-family: "Livvic";

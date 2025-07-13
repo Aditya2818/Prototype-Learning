@@ -7,6 +7,8 @@ import ReadingCard from "./ReadingCard.jsx";
 import MCQCard from "./MCQCard.jsx";
 import QACard from "./QACard.jsx";
 import CardFlip from "./CardFlip.jsx";
+import ImageCard from "./ImageCard.jsx";
+import DragText from "./DragText.jsx";
 
 const ReelContainer = () => {
   const [currentReel, setCurrentReel] = useState(0);
@@ -120,7 +122,7 @@ const ReelContainer = () => {
 
             case "text":
               content = (
-                <ReadingCard title={reel.title} content={reel.caption} />
+                <ReadingCard title={reel.title} content={reel.caption} image={reel.image} />
               );
               break;
 
@@ -134,10 +136,16 @@ const ReelContainer = () => {
               );
               break;
             case "QnA":
-              content = <QACard question={reel.text} solution={reel.answer} />;
+              content = <QACard question={reel.text} solution={reel.answer} image={reel.image}/>;
               break;
             case "flipcard":
               content = <CardFlip frontText={reel.frontText} backText={reel.backText}/>
+              break;
+            case "image":
+              content = <ImageCard text={reel.title} images={reel.images}/>
+              break;
+            case "drag":
+              content = <DragText options={reel.options}/>
               break;
 
             default:

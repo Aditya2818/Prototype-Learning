@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../styles/QACard.css";
 
-const QACard = ({ index, question, solution }) => {
+const QACard = ({ index, question, solution, image }) => {
   const [text, setText] = useState("");
   const [correct, setCorrect] = useState(null);
   const [label, setLabel] = useState("Submit");
@@ -22,12 +22,14 @@ const QACard = ({ index, question, solution }) => {
 
   const [selected, setSelected] = useState(null);
 
-
-
   return (
     <div className="mcq-screen">
-      <div className="mcq-card">
-        <h2 className="mcq-question">{question}</h2>
+      <div className="mcq-card qna-card">
+        {image ? (
+          <img src={image} />
+        ) : (
+          <h2 className="mcq-question">{question}</h2>
+        )}
         <div className="question-container">
           <input
             className="question-input"

@@ -19,6 +19,14 @@
   font-size: 1.5rem;
   text-align: justify;
 }
+.content img{
+  float: left;
+}
+.content{
+  display: flex;
+  gap: 1rem;
+}
+
 
 @media (max-width: 768px) {
     .screen {
@@ -29,6 +37,11 @@
     }
     .reading-card p{
         font-size: 1.2rem;
+    }
+    .content{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
 
 }

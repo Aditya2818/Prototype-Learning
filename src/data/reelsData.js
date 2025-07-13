@@ -7,8 +7,21 @@ export const reelsData = [
   },
   {
     id: 2,
+    caption: "Demonstrating atoms with cloud chambers and Geiger counters.",
+    video: "https://archive.org/download/of-science-and-scientists/Of%20Science%20And%20Scientists%2016%20Are%20Atoms%20Real.mp4",
+    flag: "video"
+  },
+  {
+    id: 3,
+    caption: "Wave and corpuscular models of light reconciled",
+    video: "https://archive.org/download/of-science-and-scientists/Of%20Science%20And%20Scientists%2017%20Light%20-%20Waves%20Or%20Bullets.mp4",
+    flag: "video"
+  },
+  {
+    id: 4,
     title: "Definition of parallax and baseline concept",
     caption: "Parallax is the apparent shift in position of an object when viewed from two different points. It helps scientists measure distances to nearby stars and objects in space. Baseline is the distance between the two observation points used to measure the parallax angle. A longer baseline gives a more accurate parallax angle and therefore a better distance estimate. Close one eye and look at your thumb, then switch eyes — your thumb appears to move. Your eyes act as the two observation points, and the distance between them is the baseline.",
+    image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTCiGR5HMKs9TigAYNEbQTg-QznAOg4GxJtA&s",
     flag: "text"
   },
   // {
@@ -48,17 +61,12 @@ export const reelsData = [
   //   flag: "questions"
   // },
 
-  {
-    id: 6,
-    caption: "Demonstrating atoms with cloud chambers and Geiger counters.",
-    video: "https://archive.org/download/of-science-and-scientists/Of%20Science%20And%20Scientists%2016%20Are%20Atoms%20Real.mp4",
-    flag: "video"
-  },
+  
   {
     id: 7,
-    title: "Proof of Atomic Existence",
-    caption: "Cloud Chamber: A device that visualizes the paths of charged particles, offering direct evidence of atomic-scale events like radioactive decay.Brownian Motion: The random movement of pollen grains in water observed by Robert Brown — explained by invisible collisions with atoms, confirming atomic reality.",
-    flag: "text"
+    title: "Atomic Existence",
+    images: ["https://sdmntprwestcentralus.oaiusercontent.com/files/00000000-b8b4-61fb-97d4-bf7f4e0d0989/raw?se=2025-07-13T17%3A10%3A52Z&sp=r&sv=2024-08-04&sr=b&scid=fac84bc0-c3bd-5a46-849e-1d71fc9e9eff&skoid=a3412ad4-1a13-47ce-91a5-c07730964f35&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-07-13T10%3A13%3A19Z&ske=2025-07-14T10%3A13%3A19Z&sks=b&skv=2024-08-04&sig=atTjuRQwSUGgdoQpzKchGlAOptklcu5pOnIo0zIs0Ws%3D","https://sdmntprwestus2.oaiusercontent.com/files/00000000-3290-61f8-afd1-fd7862ed7027/raw?se=2025-07-13T17%3A39%3A51Z&sp=r&sv=2024-08-04&sr=b&scid=70e6c7b2-8f40-5a18-93d6-5b453fdcee34&skoid=a3412ad4-1a13-47ce-91a5-c07730964f35&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-07-12T23%3A12%3A24Z&ske=2025-07-13T23%3A12%3A24Z&sks=b&skv=2024-08-04&sig=UZcvqrfedzosPCrwXdVaMNyeCrW5VzgB//dPNmt7088%3D"],
+    flag: "image"
   },
 
   // {
@@ -115,12 +123,7 @@ export const reelsData = [
   //   correctIndex: 1,
   //   flag: "questions"
   // },
-  // {
-  //   id: 14,
-  //   caption: "Wave and corpuscular models of light reconciled",
-  //   video: "https://archive.org/download/of-science-and-scientists/Of%20Science%20And%20Scientists%2017%20Light%20-%20Waves%20Or%20Bullets.mp4",
-  //   flag: "video"
-  // },
+  
   // {
   //   id: 15,
   //   title: 'Wave Theory vs. Particle Theory of Light',
@@ -187,6 +190,13 @@ export const reelsData = [
     answer:"Democritus",
     flag: "QnA"
   },
+  {
+    id: 23,
+    text: "",
+    image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToa4ftr0y06Agh06GanKL4jqUbFxQn6lrHJg&s",
+    answer:"Democritus",
+    flag: "QnA"
+  },
   //  {
   //   id: 23,
   //   text: "Which subatomic particle has a negative charge?",
@@ -196,6 +206,16 @@ export const reelsData = [
   {
     id: 24,
     flag: "flipcard"
+  },
+  {
+    id: 25,
+    options: [
+      "Double-slit experiment",
+      "Cloud chamber demonstration",
+      "Pendulum motion",
+      "Electromagnetic induction"
+    ],
+    flag: "drag"
   }
   ];
 

@@ -1,0 +1,16 @@
+.drag-screen{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+.drag-screen h2{
+    font-size: 1.7rem;
+    text-align: center;
+}
+.drag-div{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}

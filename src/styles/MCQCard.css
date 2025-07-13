@@ -21,6 +21,15 @@
   overflow-y: auto;
 
 }
+.qna-card{
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.mcq-card img{
+  display: block;
+  width: 100%;
+}
 
 .mcq-question {
   font-size: 22px;
