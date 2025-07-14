@@ -16,3 +16,8 @@ body{
   background-color: #F1FAEE;
   overflow-x: hidden;
 }
+html, body {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100%;
+}

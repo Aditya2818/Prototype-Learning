@@ -14,10 +14,4 @@ export const data = [
         frontText: "Photoelectric Effect 💡",
         backText: "Emission of electrons from a metal surface when exposed to light.",
     },
-      {
-        id: 3,
-        frontText: "Electron 💡",
-        backText: "It's a subatomic particle with negative charge",
-        flag: "flipcard"
-    },
 ];

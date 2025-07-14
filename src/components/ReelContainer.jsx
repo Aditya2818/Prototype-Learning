@@ -88,17 +88,13 @@ const ReelContainer = () => {
       setIsMuted(!isMuted);
     }
   };
+  
 
   return (
     <div className="reels-app">
       <div
         className="reels-container"
         ref={containerRef}
-        style={{
-          height: "100vh",
-          overflowY: "scroll",
-          scrollSnapType: "y mandatory",
-        }}
       >
         {reelsData.map((reel, index) => {
           let content = null;

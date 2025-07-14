@@ -20,7 +20,7 @@ export const reelsData = [
   {
     id: 4,
     title: "Definition of parallax and baseline concept",
-    caption: "Parallax is the apparent shift in position of an object when viewed from two different points. It helps scientists measure distances to nearby stars and objects in space. Baseline is the distance between the two observation points used to measure the parallax angle. A longer baseline gives a more accurate parallax angle and therefore a better distance estimate. Close one eye and look at your thumb, then switch eyes — your thumb appears to move. Your eyes act as the two observation points, and the distance between them is the baseline.",
+    caption: "Parallax is the apparent shift in position of an object when viewed from two different points. It helps scientists measure distances to nearby stars and objects in space.",
     image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTCiGR5HMKs9TigAYNEbQTg-QznAOg4GxJtA&s",
     flag: "text"
   },
