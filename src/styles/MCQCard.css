@@ -7,7 +7,7 @@
   justify-content: center;
   padding: 16px;
   box-sizing: border-box;
-  overflow-y: auto;
+  overflow-y: scroll;
 }
 
 .mcq-card {
@@ -18,14 +18,10 @@
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
   padding: 24px;
   box-sizing: border-box;
-  overflow-y: auto;
+  overflow-y: scroll;
 
 }
-.qna-card{
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-}
+
 .mcq-card img{
   display: block;
   width: 100%;

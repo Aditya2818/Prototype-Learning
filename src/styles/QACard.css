@@ -1,7 +1,21 @@
 .question-input{
-    
+    font-size: 18px;
     padding: 8px;
+    margin-top: 10px;
+    border: 1px solid grey;
+    border-radius: 8px;
 }
+.qna-card{
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+  }
+  .qna-card img{
+    margin-bottom: 1rem;
+  }
+  .qna-question{
+    font-size: 22px;
+  }
 .question-container{
     display: flex;
     flex-direction: column;
@@ -11,6 +25,7 @@
 .submit-btn{
     font-size: 16px;
     padding: 8px;
+    border-radius: 8px;
 }
 .submit-btn.correct{
      background-color: #1a3d1a;

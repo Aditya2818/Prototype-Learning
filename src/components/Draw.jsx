@@ -20,7 +20,14 @@ const Draw = () => {
           <button onClick={clear}>Clear</button>
           <button onClick={undo}>Undo</button>
         </div>
-        <CanvasDraw brushRadius={1} ref={firstCanvas} />
+        <div className="canvas-wrapper">
+          <CanvasDraw
+            brushRadius={1}
+            ref={firstCanvas}
+            canvasWidth={350}
+            canvasHeight={350}
+          />
+        </div>
       </div>
     </div>
   );

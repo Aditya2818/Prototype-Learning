@@ -28,7 +28,7 @@ const QACard = ({ index, question, solution, image }) => {
         {image ? (
           <img src={image} />
         ) : (
-          <h2 className="mcq-question">{question}</h2>
+          <h2 className="qna-question">{question}</h2>
         )}
         <div className="question-container">
           <input

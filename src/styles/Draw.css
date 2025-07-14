@@ -3,22 +3,39 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 15px;
 }
 
 .canvas-screen h2{
     margin-top:0;
     font-size: 2.5rem;
 }
-
+.canvas-wrapper {
+    width: 100%;
+    max-width: 100vw;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
 .btns{
     display: flex;
     gap:20px;
     justify-content: center;
     margin-bottom: 1rem;
+    
 }
 
 .btns button{
     padding: 8px;
     width: 20%;
+    border-radius: 8px;
 }
+.canvas-draw{
+    width: 10px;
+}
+
+canvas {
+    max-width: 100% !important;
+    height: auto !important;
+  }

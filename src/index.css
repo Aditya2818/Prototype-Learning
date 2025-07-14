@@ -9,8 +9,10 @@ html, body, #root {
   margin: 0;
   padding: 0;
   height: 100%;
-  background-color: #F1FAEE;
+ 
 }
 body{
   font-family: "Livvic";
+  background-color: #F1FAEE;
+  overflow-x: hidden;
 }

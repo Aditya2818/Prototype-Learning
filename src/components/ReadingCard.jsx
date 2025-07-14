@@ -6,10 +6,9 @@ export default function ReadingCard({ title, content, image }) {
     <div className="screen">
       <h2>{title}</h2>
       <div className="content">
-        <img src={image}/>
-      <p>{content}</p>
+        {image ? <img src={image} /> : ""}
+        <p>{content}</p>
       </div>
-      
     </div>
   );
 }
